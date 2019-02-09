@@ -64,6 +64,8 @@ set(_ZLIB_SEARCH_NORMAL
     PATHS "[HKEY_LOCAL_MACHINE\\SOFTWARE\\GnuWin32\\Zlib;InstallPath]"
           "$ENV{ProgramFiles}/zlib"
           "$ENV{ProgramFiles${_ZLIB_x86}}/zlib")
+          "$ENV{ProgramFiles}/GnuWin32"
+          "$ENV{ProgramFiles${_ZLIB_x86}}/GnuWin32")
 unset(_ZLIB_x86)
 list(APPEND _ZLIB_SEARCHES _ZLIB_SEARCH_NORMAL)
 
